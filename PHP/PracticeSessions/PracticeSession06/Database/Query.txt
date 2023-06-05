@@ -1,0 +1,14 @@
+CREATE DATABASE SCHOOL;
+
+USE SCHOOL;
+
+CREATE TABLE STUDENTS
+(
+    id int PRIMARY KEY AUTO_INCREMENT,
+    name varchar(50) not null,
+    father_name varchar(50) not null,
+    age tinyint not null,
+    fee int not null
+);
+
+SELECT * FROM STUDENTS;
