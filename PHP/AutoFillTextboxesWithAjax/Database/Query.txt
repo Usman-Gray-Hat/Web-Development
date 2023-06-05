@@ -1,0 +1,13 @@
+CREATE DATABASE DEMO1;
+USE DEMO1;
+CREATE TABLE STUDENT
+(
+    Id int primary key AUTO_INCREMENT,
+    Roll_No varchar(50) not null,
+    Name varchar(50) not null,
+    Class varchar(50) not null
+);
+INSERT INTO STUDENT VALUES(NULL,1,'Ali','X');
+INSERT INTO STUDENT VALUES(NULL,2,'Bilal','IX');
+INSERT INTO STUDENT VALUES(NULL,3,'Urooj','IX');
+SELECT * FROM STUDENT;
