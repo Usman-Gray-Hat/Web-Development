@@ -1,0 +1,12 @@
+
+==============
+Snippet Query:
+==============
+ALTER TABLE table_name CHANGE old_column_name new_column_name datatype;
+
+========
+Example:
+========
+ALTER TABLE student_tbl CHANGE std_name student_name varchar(50);
+
+Note: ALTER, TABLE, & CHANGE are keywords. Varchar is datatype, You can modify datatype too.

@@ -1,0 +1,25 @@
+
+===============
+Snippet Query:1
+===============
+ALTER TABLE old_table_name RENAME new_table_name;
+
+========
+Example:
+========
+ALTER TABLE student_tbl RENAME students;
+
+Note: ALTER, TABLE, & RENAME are keywords.
+
+
+===============
+Snippet Query:2
+===============
+RENAME TABLE old_table_name TO new_table_name
+
+========
+Example:
+========
+RENAME TABLE student_tbl TO students;
+
+Note: RENAME, TABLE, & TO are keywords.

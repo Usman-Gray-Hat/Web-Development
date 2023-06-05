@@ -1,0 +1,12 @@
+======
+Query:
+======
+ALTER TABLE Your_Table_Name
+ADD UNIQUE(Column_Name);
+
+
+========
+Example:
+========
+ALTER TABLE student_tbl
+ADD UNIQUE(std_email);
