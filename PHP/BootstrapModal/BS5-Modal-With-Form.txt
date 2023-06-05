@@ -1,0 +1,46 @@
+ 
+ 
+
+ <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Add New Record</button>
+
+
+<div class="modal fade" id="myModal">
+
+<div class="modal-dialog">
+
+<div class="modal-content">
+
+  <div class="modal-header">
+
+    <h2>INSERT RECORD</h2>
+
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"> &times; </button>
+  </div>
+
+  <div class="modal-body">
+
+  <form action="" method='post'>
+        <input type="text" id="name" placeholder="Enter Full Name" class="form-control">
+        <br>
+
+        <input type="number" id="age" placeholder="Enter Age" class="form-control">
+        <br>
+
+        <input type="text" id="email" placeholder="Enter Email" class="form-control">
+        <br>
+
+        <input type="text" id="designation" placeholder="Enter Designation" class="form-control">
+        <br>
+  </div>
+
+  <div class="modal-footer">
+
+    <button type="button" class="btn btn-primary" onclick="add()">Save</button>
+
+    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </form>
+      </div>
+    </div>
+  </div>
+ </div>
+</div>

@@ -1,0 +1,15 @@
+    
+================
+JQUERY UI FILES:
+================
+
+    <!-- JQuery UI CSS File -->
+    <link rel="stylesheet" href="jquery-ui-1.13.2/jquery-ui.min.css">
+
+    <!-- JQuery UI JS File -->
+    <script src="jquery-ui-1.13.2/jquery-ui.min.js"></script>
+
+
+* NOTE: Must add jquery-ui-1.13.2 folder in your main project folder.
+        Then link above two files within head tag.
+        Must add jQuery CDN before linking above two files.

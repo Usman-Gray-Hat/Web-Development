@@ -1,0 +1,41 @@
+<!-- Modal Trigger Button -->
+ <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Add New Record</button>
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal">
+
+
+<!-- Modal Dialog -->
+<div class="modal-dialog">
+
+
+<!-- Modal Content -->
+<div class="modal-content">
+
+
+    <!-- Modal Header -->
+  <div class="modal-header">
+
+    <!-- Heading -->
+    <h2>INSERT RECORD</h2>
+
+    <!-- Close Button with cross icon -->
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"> &times; </button>
+  </div>
+
+
+  <!-- Modal Body -->
+  <div class="modal-body">
+
+
+  </div>
+
+
+  <!-- Modal Footer (Mostly used for Form's buttons) -->
+  <div class="modal-footer">
+
+    </div>
+  </div>
+ </div>
+</div>

@@ -1,0 +1,20 @@
+
+======================================================
+AUTO-START OF APACHE & MYSQLIi SERVICES ON PC STARTUP:
+======================================================
+
+* Open xampp control panel -> click on "Config" -> Click on check boxes of Apache & Mysql.
+
+* Press Window+r -> run command: "REGEDIT".
+
+* Expand directories to reach on "run" folder.
+
+* HKEY_LOCAL_MACHINE > SOFTWARE > Microsoft > Windows > CurrentVersion > RUN.
+
+* Now in run folder, right click on that window -> Select String Value -> Name it XAMPP.
+
+* Give location " C:\xampp\xampp-control " on value field.
+
+* Open Xamp control panel -> Click on "Config" -> Check on " Start control panel minimized " if you don't want to see Xamp control panel Popup.
+
+* Restart your system.

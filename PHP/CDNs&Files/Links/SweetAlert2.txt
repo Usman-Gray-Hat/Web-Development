@@ -1,0 +1,24 @@
+
+=================
+SWEET ALERT2 CDN:
+=================
+
+<!-- Sweet Alert2 css file -->
+<link rel="stylesheet" href="dist/sweetalert2.min.css">
+
+<!-- Sweet Alert2 Js file -->
+<script src="dist/sweetalert2.all.min.js"></script>
+
+
+
+NOTE: Must include jQuery CDN before Sweet Alert2 CDNs, otherwise Sweet Alert2 message popup modal won't work.
+      Check below example,
+
+<!-- JQuery CDN -->
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+<!-- Sweet Alert2 css file -->
+<link rel="stylesheet" href="dist/sweetalert2.min.css">
+
+<!-- Sweet Alert2 Js file -->
+<script src="dist/sweetalert2.all.min.js"></script>

@@ -1,0 +1,65 @@
+ 
+ 
+ <!-- Modal Trigger Button -->
+ <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Add New Record</button>
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal">
+
+
+<!-- Modal Dialog -->
+<div class="modal-dialog">
+
+
+<!-- Modal Content -->
+<div class="modal-content">
+
+
+    <!-- Modal Header -->
+  <div class="modal-header">
+
+
+    <!-- Heading -->
+    <h2>INSERT RECORD</h2>
+
+
+    <!-- Close Button with cross icon -->
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"> &times; </button>
+  </div>
+
+
+  <!-- Modal Body -->
+  <div class="modal-body">
+
+  <!-- Form -->
+  <form action="" method='post'>
+        <input type="text" id="name" placeholder="Enter Full Name" class="form-control">
+        <br>
+
+        <input type="number" id="age" placeholder="Enter Age" class="form-control">
+        <br>
+
+        <input type="text" id="email" placeholder="Enter Email" class="form-control">
+        <br>
+
+        <input type="text" id="designation" placeholder="Enter Designation" class="form-control">
+        <br>
+  </div>
+
+
+  <!-- Modal Footer (Mostly used for Form's buttons) -->
+  <div class="modal-footer">
+
+    <!-- Save Changes Button -->
+    <button type="button" class="btn btn-primary" onclick="add()">Save</button>
+
+
+    <!-- Close Button -->
+    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </form>
+      </div>
+    </div>
+  </div>
+ </div>
+</div>
