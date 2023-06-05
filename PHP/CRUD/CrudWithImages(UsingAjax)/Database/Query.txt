@@ -1,0 +1,13 @@
+CREATE DATABASE school;
+USE school;
+
+CREATE TABLE student
+(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(50),
+    age TINYINT,
+    fees BIGINT,
+    image_path VARCHAR(500)
+);
+
+SELECT * FROM student;
