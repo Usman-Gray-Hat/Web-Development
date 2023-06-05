@@ -1,0 +1,21 @@
+CREATE DATABASE DB_ROUGH;
+USE DB_ROUGH;
+
+CREATE TABLE STUDENT
+(
+    ID INT PRIMARY KEY AUTO_INCREMENT,
+    NAME VARCHAR(50) NOT NULL,
+    GENDER VARCHAR(50) NOT NULL,
+    AGE TINYINT NOT NULL,
+    EMAIL VARCHAR(100) UNIQUE NOT NULL
+);
+
+INSERT INTO STUDENT VALUES(NULL,'Usman Hameed','Male',22,'usman@gmail.com'); 
+INSERT INTO STUDENT VALUES(NULL,'Raheel Azam','Male',23,'raheel@hotmail.com'); 
+INSERT INTO STUDENT VALUES(NULL,'Bilal Amir','Male',22,'bilal@outlook.com'); 
+INSERT INTO STUDENT VALUES(NULL,'Rida Arshad','Female',21,'rida@yahoo.com'); 
+INSERT INTO STUDENT VALUES(NULL,'Zain Khawar','Male',24,'zain@gmail.com'); 
+INSERT INTO STUDENT VALUES(NULL,'Dua Zulfiqar','Female',19,'dua@outlook.com'); 
+INSERT INTO STUDENT VALUES(NULL,'Maryum Atif','Female',20,'maryum@gmail.com'); 
+
+SELECT * FROM STUDENT;
