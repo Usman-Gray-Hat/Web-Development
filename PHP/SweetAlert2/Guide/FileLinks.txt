@@ -1,0 +1,16 @@
+   
+
+==================================
+JQUERY SCRIPTS AND CSS FILES LINK:
+==================================
+
+* Before using jQuery sweet alert2 modal popup in your project, you need to link these files within head tag.  
+
+  <!-- JQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+  <!-- Sweet Alert2 css file -->
+  <link rel="stylesheet" href="dist/sweetalert2.min.css">
+
+  <!-- Sweet Alert2 Js file -->
+  <script src="dist/sweetalert2.all.min.js"></script>

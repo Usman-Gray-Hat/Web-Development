@@ -1,0 +1,73 @@
+================
+IMPORTANT GUIDE:
+================
+
+* First of all, turn on 2 Step verification on your google account.
+
+* Set app password in your gmail.
+
+* In case if you unable to find app password option,
+  use this link: https://myaccount.google.com/apppasswords
+
+* Gmail will auto-generate your app password.
+
+* Download PHPMailer. Recommended link: https://github.com/PHPMailer/PHPMailer
+
+* Extract it inside your main project folder.
+
+* Define namespaces at the top of your code.
+=> use PHPMailer\PHPMailer\PHPMailer;
+=> use PHPMailer\PHPMailer\SMTP;
+=> use PHPMailer\PHPMailer\Exception;
+
+* Include required PHPMailer files
+=> require 'uploades/PHPMailer.php';
+=> require 'uploades/SMTP.php';
+=> require 'uploades/Exception.php';
+
+* Create instance of "PHPMailer" ==> $mail = new PHPMailer();
+
+* Now set PHPMailer properties with their required values. 
+
+* Note: Assign your gmail "app password" (not your gmail password) to Password property.
+
+* Example: $mail->Password = "YourAppPassword";
+
+* Note: setFrom() method takes two parameters,
+  1st is sender email,
+  2nd is sender name which is optional. You can skip 2nd parameter.
+
+(i)  $mail->setFrom('usmanhameed1790@gmail.com','Usman Hameed'); 
+     OR 
+(ii) $mail->setFrom('usmanhameed1790@gmail.com');
+
+* Incase if you need to send or use emojis in your mail then,
+  set value 'UTF-8' to CharSet property.
+
+* Example: $mail->CharSet = 'UTF-8';
+
+* Note: (i)  Assign value of "smtp.gmail.com" to 'Host' property,
+             (If you are using PHPMailer on localhost). 
+
+        (ii) Assign value of your website domain to 'Host' property,
+             (If you are using PHPMailer on a live website).
+
+* Example: 
+
+    $mail->Host = "smtp.gmail.com"; (For localhost).
+    OR
+    $mail->Host = "madalphadesigners.com"; (For live website).
+
+
+* You can send mail to multiple recipients using PHPMailer by looping through your email addresses,
+  and adding each recipient one by one.
+
+* Example:
+
+    $email_Addresses = array("recipient1@gmail.com", "recipient2@gmail.com", "recipient3@gmail.com");
+
+    foreach($email_Addresses as $i)
+    {
+      $mail->addAddress($i);
+    }
+    $mail->send();
