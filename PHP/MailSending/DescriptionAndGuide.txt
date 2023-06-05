@@ -1,0 +1,103 @@
+
+======================================
+MAIL SENDING IN PHP THROUGH LOCALHOST:
+======================================
+
+Step.1:
+
+* Create Html form to take user input and use mail function to send email
+
+               <!-- Form Opening -->
+               <form action="" method="post">
+               <br>
+
+               <!-- Email -->
+               <input type="email" name="email" placeholder="Enter Email" class="form-control" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" required>
+               <br>
+
+               <!-- Subject -->
+               <select name="subject" class="form-control" required>
+                   <option value="">Select Subject</option>
+                   <option value="Feed back">Feed back</option>
+                   <option value="Suggestions">Suggestions</option>
+                   <option value="Complain">Complain</option>
+               </select>
+               <br>
+
+               <!-- Text Area -->
+               <textarea name="message"  cols="30" rows="5" placeholder="Let us know about your feed back, suggestions or complain here.." class="form-control" required></textarea>
+               <br>
+
+               <!-- Submit Button -->
+               <input type="submit" value="Send Mail" name="SendMailBtn" class="btn btn-primary btn-block">
+               <br>
+
+               </form>
+
+
+      <?php
+      if(isset($_POST['SendMailBtn']))
+      {
+        $to = "usmanhameed1790@gmail.com"; //Admin email
+        $from = $_POST['email']; //User email
+        $subject = $_POST['subject']; //subject
+        $message = $_POST['message']; //message
+
+        $result = mail($to,$subject,$message,$from);
+        if($result==true)
+        {
+            echo "<script> alert('Email has been sent'); </script>";
+        }
+        else
+        {
+            echo "<script> alert('Email sending failed!'); </script>";
+        }
+      }
+      ?>
+
+
+Step.2:
+
+* Open XAMPP Installation Directory.
+
+* Go to C:\xampp\php and open the "php.ini" file [File type: Configuration settings] in vs code or in any other text editor.
+
+* Find [mail function] by pressing ctrl + f.
+
+* Search and pass the following values:
+
+=> SMTP=smtp.gmail.com
+=> smtp_port=587
+=> sendmail_from = YourGmailId@gmail.com
+=> sendmail_path = "\"C:\xampp\sendmail\sendmail.exe\" -t"
+
+* Now, go to C:\xampp\sendmail and open the "sendmail.ini" file [File type: Configuration settings] in vs code or in any other text editor.
+
+* Find [sendmail] by pressing ctrl + f.
+
+* Search and pass the following values:
+
+=> smtp_server=smtp.gmail.com
+=> smtp_port=587 or 25 //use any of them
+=> error_logfile=error.log
+=> debug_logfile=debug.log
+=> auth_username=YourGmailId@gmail.com
+=> auth_password=Your-Gmail-Password
+=> force_sender=YourGmailId@gmail.com(optional)
+
+* Note: If you are getting a warning message then configure "less secure apps".
+
+
+Step.3:
+
+* Turn on "less secure apps" settings as mailbox user.
+
+* Go to your google account.
+
+* On the left navigation panel, click on security.
+
+* Scroll down and in the less secure apps access panel, click on "Turn on access".
+
+* Now, stop Apache service and then re-start Apache service in xampp.
+
+* Note: SMTP stands for Simple Mail Transfer Protocol.
