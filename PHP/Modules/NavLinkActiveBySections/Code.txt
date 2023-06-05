@@ -1,0 +1,24 @@
+            
+
+<ul class="navbar-nav ms-auto pt-2 pt-lg-0">
+
+              <li class="nav-item" data-anchor="data-anchor"><a class="nav-link fw-medium <?php if(basename($_SERVER['QUERY_STRING'])=="sec=0"){ echo "active"; } ?>" 
+		href="index.php?sec=0#home">Home</a></li>
+
+              <li class="nav-item" data-anchor="data-anchor"><a class="nav-link fw-medium <?php if(basename($_SERVER['PHP_SELF'])=="portfolio.php"){ echo "active"; } ?>" 		href="portfolio.php">Portfolio</a></li>
+
+              <li class="nav-item" data-anchor="data-anchor"><a class="nav-link fw-medium <?php if(basename($_SERVER['QUERY_STRING'])=="sec=1"){ echo "active"; } ?>" 
+		href="index.php?sec=1#pricing">Pricing</a></li>
+
+              <li class="nav-item" data-anchor="data-anchor"><a class="nav-link fw-medium <?php if(basename($_SERVER['PHP_SELF'])=="testimonial.php"){ echo "active"; } ?>" 		href="testimonial.php#slideshow">Testimonial</a></li>
+
+              <li class="nav-item" data-anchor="data-anchor"><a class="nav-link fw-medium <?php if(basename($_SERVER['PHP_SELF'])=="about us.php"){ echo "active"; } ?>" 
+		href="about us.php">About Us</a></li>
+
+              <li class="nav-item" data-anchor="data-anchor"><a class="nav-link fw-medium <?php if(basename($_SERVER['PHP_SELF'])=="contact us.php"){ echo "active"; } ?>" 
+		href="contact us.php">Contact Us</a></li>
+
+              <li class="nav-item" data-anchor="data-anchor"><a class="nav-link fw-medium <?php if(basename($_SERVER['QUERY_STRING'])=="sec=2"){ echo "active"; } ?>" 
+		href="index.php?sec=2#policy">Policy</a></li>
+
+            </ul>
