@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style media="screen">
+
+body{
+	overflow: hidden;
+}
+.container{
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	height: 100px;
+	width: 100px;
+	background: #002651;
+	text-align: center;
+	border-radius: 50%;
+}
+.fa-plus{
+	margin-top: 25px;
+	font-size: 50px;
+	display: block;
+	color: white;
+	cursor: pointer;
+	transition: .7s;
+}
+.menu_group{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100px;
+	width: 100px;
+	margin: auto;
+	background: #775ada;
+	border-color: #581b98;
+	border-radius: 50%;
+	z-index: -1;
+	transform: scale(0);
+	transition: .7s;
+}
+.menu_group a{
+	position: absolute;
+	display: inline-block;
+	font-size: 12px;
+	color: #364f6b;
+}
+a:hover{
+	color: #2c3e50;
+}
+a:nth-child(1){
+	top: 6px;
+	left: 45px;
+}
+a:nth-child(2){
+	top: 24px;
+	left: 77px;
+}
+a:nth-child(3){
+	top: 58px;
+	left: 76px;
+}
+a:nth-child(4){
+	top: 78px;
+	left: 42px;
+}
+a:nth-child(5){
+	top: 58px;
+	left: 10px;
+}
+a:nth-child(6){
+	top: 23px;
+	left: 12px;
+}
+
+img{
+  height: 15px;
+}
+  </style>
+</head>
+<body>
+
+	<!-- For Plus -->
+<div class="container" onclick="expand()">
+  <i class="fa fa-plus" id="plus"></i>
+	</div>
+
+	<!-- For Social Icons -->
+	<div class="menu_group" id="menu">
+		<a href="#"><img src="https://img.icons8.com/color/48/000000/whatsapp.png"/></a>
+		<a href="#"><img src="https://img.icons8.com/fluent/48/000000/instagram-new.png"/></a>
+		<a href="#"><img src="https://img.icons8.com/officel/80/000000/facebook-circled.png"/></a>
+		<a href="#"><img src="https://img.icons8.com/fluent/96/000000/gmail.png"/></a>
+		<a href="#"><img src="https://img.icons8.com/color/96/000000/telegram-app.png"/></a>
+		<a href="#"><img src="https://img.icons8.com/officel/80/000000/google-logo.png"/></a>
+	</div>
+
+    <!-- JQuery CDN -->
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<!-- JS Script -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"></script>
+
+	<!-- Scripting -->
+  <script type="text/javascript">
+	
+	var plusIcon = $("#plus")[0];
+	var socialIcons = $("#menu")[0];
+	var toggle = 0;
+
+	function expand()
+	{
+		if (toggle == 0) 
+		{
+			plusIcon.style.transform = "rotate(360deg)";
+			socialIcons.style.transform = "scale(3)";
+			toggle = 1;
+		}
+		else
+		{
+			plusIcon.style.transform = "rotate(0deg)";
+			socialIcons.style.transform = "scale(0)";			
+			toggle = 0;
+		}
+	}
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+========================
+TOGGLE ACTION TECHNIQUE:
+========================
+
+* In this technique, you can repeatedly perform your specified actions/block of code.
+
+* Using this technique, you can execute twice, thrice or even more block of codes on a loop.
+
+* In this technique, you can perfrom toggle action with the help of digits.
+
+=============
+SNIPPET CODE:
+=============
+
+	var toggle = 0;
+        $("#btn").click(function(){
+            if(toggle==0)
+            {
+                //Your specified statement
+		        //Your specified statement
+		        //Your specified statement
+                toggle = 1;
+            }
+            else if(toggle==1)
+            {
+                //Your specified statement
+		        //Your specified statement
+		        //Your specified statement
+                toggle = 2;
+            }
+            else if(toggle==2)
+            {
+                //Your specified statement
+		        //Your specified statement
+		        //Your specified statement
+                toggle = 3;
+            }
+            else if(toggle==3)
+            {
+                //Your specified statement
+		        //Your specified statement
+		        //Your specified statement
+                toggle = 0;
+            }
+        });
