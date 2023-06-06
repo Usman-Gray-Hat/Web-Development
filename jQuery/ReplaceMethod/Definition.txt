@@ -1,0 +1,15 @@
+==========================
+REPLACE METHODS IN JQUERY:
+==========================
+
+=> replaceWith();
+
+*  This method replaces selected elements with a new content.
+
+
+=> replaceAll();
+
+*  This method replace each target element with the set of matched elements.
+
+*  The replaceAll() method is similar to replaceWith(), but with the source
+   and target reversed.

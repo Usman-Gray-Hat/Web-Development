@@ -1,0 +1,59 @@
+
+=================================
+HIDE , SHOW AND TOGGLE FUNCTIONS:
+=================================
+
+* hide(); show(); and toggle(); functions can take 2 arguments.
+
+* In 1st argument, you can specify the speed of displaying and hiding content:
+  (1) For speed, you must give either value of 'slow' or 'fast' or milliseconds. 
+  (2) Milliseconds should be in integer format. (Without single or double quotes)
+
+* In 2nd argument, you can use call back function to perform your desired task.
+
+
+      <!-- Bootstrap Grid System -->
+      <div class="container" style="margin-top:100px;">
+        <div class="row">
+            <div class="col-md-5 mx-auto">
+            <button type="button" class="btn btn-primary" id="show">Show</button> <!-- Button For Showing Content -->
+            <button type="button" class="btn btn-danger"  id="hide">Hide</button> <!-- Button For Hiding Content -->
+            <button type="button" class="btn btn-success" id="hideANDshow">Hide/Show</button> <!-- Button For Showing & Hiding Content -->
+            </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-5 mx-auto">
+            <h3 id="content">This is some text</h3>
+          </div>
+        </div>
+     </div>
+
+
+
+       <script type="text/javascript">
+
+       $(document).ready(function(){
+        EXAMPLE (1)
+        $('#hideANDshow').on('click',function(){
+        $('#content').toggle('slow',function(){
+          alert('Action completed!');
+            })
+          });
+
+        EXAMPLE (2)
+        $('#hideANDshow').on('click',function(){
+        $('#content').toggle('fast',function(){
+          alert('Action completed!');
+            })
+          });
+
+        EXAMPLE (3)
+        $('#hideANDshow').on('click',function(){
+        $('#content').toggle(3000,function(){
+          alert('Action completed!');
+            })
+          });
+       });
+
+       </script>

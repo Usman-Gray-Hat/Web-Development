@@ -1,0 +1,24 @@
+
+=======================
+JQUERY DATA TABLE CDNs:
+=======================
+
+<!-- Data Table CDN -->
+<script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+
+<!-- Data Table Style CDN -->
+<link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
+
+
+
+NOTE: Must include jQuery CDN along with Data Table and Data Table Style CDN, otherwise Data Table won't work.
+      Check below example: 
+
+<!-- JQuery CDN -->
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+<!-- Data Table CDN -->
+<script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+
+<!-- Data Table Style CDN -->
+<link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">

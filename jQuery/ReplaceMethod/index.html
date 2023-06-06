@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- JS Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"></script>
+    <!-- JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <title>Replace Method</title>
+</head>
+<style>
+    *{
+        font-family: sans-serif;
+    }
+    h1{
+        font-weight: 900;
+        letter-spacing: 2px;
+    }
+</style>
+<body>
+    <!-- Bootstrap Grid System -->
+    <div class="container mt-2">
+        <div class="row"> <!-- 1st Row -->
+            <div class="col-md-12">
+                <h1 class="text-center jumbotron bg-dark text-white">REPLACE METHOD IN JQUERY</h1>
+            </div>
+        </div>
+
+        <div class="row"> <!-- 2nd Row -->
+            <div class="col-md-6">
+                <!-- Paragraphs -->
+                <p id="p1">Paragraph 1</p>
+                <p id="p2">Paragraph 2</p>
+                <p id="p3">Paragraph 3</p>
+                <p id="p4">Paragraph 4</p>
+                <!-- Buttons -->
+                <button type="button" class="btn btn-secondary" id="btn1">Replace With</button>
+                <button type="button" class="btn btn-secondary" id="btn2">Replace All</button>
+               </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripting -->
+    <script type="text/javascript">
+        $(document).ready(function(){
+            // Replace With
+            $('#btn1').click(function(){
+                $('#p1').replaceWith("<h3>Welcome To jQuery</h3>");
+            });
+            // Replace All
+            $('#btn2').click(function(){
+                $('<h3>Welcome To jQuery</h3>').replaceAll('p');
+            });
+        });
+    </script>
+</body>
+</html>

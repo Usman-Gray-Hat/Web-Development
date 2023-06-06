@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Custom Function</title>
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+        h1{
+            font-weight: 900;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Bootstrap Grid System -->
+    <div class="container mt-2">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="jumbotron text-center text-white bg-dark">USING CUSTOM FUNCTIONS IN JQUERY</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <input type="number" name="num1" id="num1" placeholder="Enter 1st value" class="form-control"> <br> <!-- Value 1 -->
+                <input type="number" name="num2" id="num2" placeholder="Enter 2nd value" class="form-control"> <br> <!-- Value 2 -->
+                <input type="number" name="result" id="result" placeholder="Result" class="form-control mb-1" disabled> <!-- Result -->
+
+                <!-- Button -->
+                <button type="button" class="btn btn-success" id="btnAdd">Add</button>       <!-- Addition -->
+                <button type="button" class="btn btn-success" id="btnSub">Subtract</button>  <!-- Subtraction -->
+                <button type="button" class="btn btn-success" id="btnMult">Multiply</button> <!-- Multiplication -->
+                <button type="button" class="btn btn-success" id="btnDiv">Divide</button>    <!-- Division -->
+            </div>
+        </div>
+    </div>
+
+    <!-- JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <!-- JS Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"></script>
+
+    <!-- Scripting -->
+    <script type="text/javascript">
+
+        // Addition "+"
+        function add()
+        {
+            var num1 = $("#num1").val();
+            var num2 = $("#num2").val();
+            if(num1=='' || num2=='')
+            {
+                alert('Fill both fields to get a result of addition');
+            }
+            else
+            {
+                 var result = parseInt(num1) + parseInt(num2);
+                $("#result").val(result);
+            }
+        }
+
+        // Subtraction "-"
+        function sub()
+        {
+            var num1 = $("#num1").val();
+            var num2 = $("#num2").val();
+            if(num1=='' || num2=='')
+            {
+                alert('Fill both fields to get a result of addition');
+            }
+            else
+            {
+                 var result = parseInt(num1) - parseInt(num2);
+                $("#result").val(result);
+            }
+        }
+
+        // Multiplication "*"
+        function mult()
+        {
+            var num1 = $("#num1").val();
+            var num2 = $("#num2").val();
+            if(num1=='' || num2=='')
+            {
+                alert('Fill both fields to get a result of addition');
+            }
+            else
+            {
+                 var result = parseInt(num1) * parseInt(num2);
+                $("#result").val(result);
+            }
+        }
+
+        // Division "/"
+        function div()
+        {
+            var num1 = $("#num1").val();
+            var num2 = $("#num2").val();
+            if(num1=='' || num2=='')
+            {
+                alert('Fill both fields to get a result of addition');
+            }
+            else
+            {
+                 var result = parseInt(num1) / parseInt(num2);
+                $("#result").val(result);
+            }
+        }
+
+        // Addition
+        $("#btnAdd").click(function(){
+            add();
+        });
+
+        // Subtraction
+        $("#btnSub").click(function(){
+            sub();
+        });
+
+        // Multiplication
+        $("#btnMult").click(function(){
+            mult();
+        });  
+
+        // Division
+        $("#btnDiv").click(function(){
+            div();
+        });   
+
+    </script>
+</body>
+</html>

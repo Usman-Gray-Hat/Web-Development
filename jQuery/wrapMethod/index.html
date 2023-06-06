@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- JS Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"></script>
+    <!-- JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <title>Wrapping Methods In jQuery</title>
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+        h1{
+            font-weight: 900;
+            letter-spacing: 2px;
+        }
+        #myDiv{
+            height: 200px;
+            width: 300px;
+            border: 4px black ridge;
+            background-color: azure;
+        }
+    </style>
+</head>
+<body>
+    <!-- Bootstrap Grid System -->
+    <div class="container-fluid mt-2">
+        <div class="row"> <!-- 1st Row -->
+            <div class="col-md-12">
+                <h1 class="jumbotron text-center text-white bg-dark">WRAP, UNWRAP, WRAPALL & WRAPINNER METHODS IN JQUERY</h1>
+            </div>
+        </div>
+
+        <div class="row"> <!-- 2nd row -->
+            <div class="col-md-12">
+                <p id="p1">This is paragraph 1</p>
+                <p id="p2">This is paragraph 2</p>
+                <p id="p3">This is paragraph 3</p>
+                <button type="button" class="btn btn-secondary" id="btn1">Wrap</button>
+                <button type="button" class="btn btn-secondary" id="btn2">Wrap All</button>
+                <button type="button" class="btn btn-secondary" id="btn3">Un Wrap</button>
+                <button type="button" class="btn btn-secondary" id="btn4">Wrap Inner</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripting -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            // Wrap
+            $('#btn1').click(function(){
+                $('#p1,#p2,#p3').wrap('<div id="myDiv"></div>');
+            });
+
+            // Wrap All
+            $('#btn2').click(function(){
+                $('#p1,#p2,#p3').wrapAll('<div id="myDiv"></div>');
+            });
+
+            // Un Wrap
+            $('#btn3').click(function(){
+                $('p').unwrap();
+            });
+            
+            // Wrap Inner
+            $('#btn4').click(function(){
+                $('p').wrapInner("<b><u><i></i></u></b>");
+            });
+        });
+    </script>
+
+    <!-- Note: Unwrap doesn't work with wrapInner method, and additionally unwrap method doesn't take any argument. -->
+</body>
+</html>

@@ -1,0 +1,25 @@
+=============
+POST MESSAGE:
+=============
+
+* window.opener.postMessage() is a method in JavaScript that allows communication between two windows
+  or tabs that are controlled by the same domain.
+
+* It is used to send a message from a child window to its parent window.
+
+* The child window executes the window.opener.postMessage method with the message to send
+  as the first parameter, and the target origin as the second parameter.
+
+* The parent window can listen for the message event by adding an event listener to the window object.
+  The listener function will be called when a message is received.
+
+* When the listener function is called, it can access the message data through the event.data property.
+
+* Note: In jQuery, use this syntax $(window).on('message',function(e){}); instead of addEventListener.
+
+* Note that the target origin parameter is used to specify the domain that the message should be sent to.
+  This is a security feature that helps prevent cross-site scripting attacks.
+
+* In summary, window.opener.postMessage is a useful method for allowing communication between windows or tabs
+  that are under the same domain control, and can be used for a variety of purposes, such as passing data
+  or triggering actions.

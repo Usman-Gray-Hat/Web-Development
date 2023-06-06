@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>1st window Open</title>
+</head>
+<body>
+
+    <!-- Bootstrap Grid System -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="jumbotron bg-dark text-white text-center">FIRST WINDOW</h1>
+                <button type="button" class="btn btn-outline-info float-right mb-2" id="btnOpen">Open</button> <br><br>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Scripting -->
+    <script type="text/javascript">
+      let secondWindow;
+      $('#btnOpen').click(function() {
+      secondWindow = window.open('secondWindow.html','_blank','height=400,width=800,left=500,top=300');
+        // Listen for messages from the second window
+        $(window).on('message', function(event){ 
+        if(event.originalEvent.origin !== window.location.origin) 
+        {
+          // Ignore messages from other domains
+          return;
+        }
+        if(event.originalEvent.data === 'success') 
+        {
+          let fieldValue = $(secondWindow.document).find("#name").val();
+          alert("Field value is " + fieldValue);
+          secondWindow.close();
+        }
+      });
+    });
+    </script>
+</body>
+</html>

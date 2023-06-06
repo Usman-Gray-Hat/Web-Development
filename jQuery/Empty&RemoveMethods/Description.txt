@@ -1,0 +1,15 @@
+=============
+EMPTY METHOD:
+=============
+
+* The empty method removes all the child nodes and content from the selected elements.
+
+* This method does not remove the element itself, or its attributes.
+
+
+==============
+REMOVE METHOD:
+==============
+
+* The jQuery remove() method also accepts one parameter, which allows you to filter
+  the elements to be removed.

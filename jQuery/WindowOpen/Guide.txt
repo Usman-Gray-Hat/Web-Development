@@ -1,0 +1,53 @@
+===========
+DEFINITION:
+===========
+
+* The open() method opens a new browser window, or a new tab,
+  depending on your browser settings and the parameter values.
+
+* Syntax: window.open(URL, name, specs, replace);
+
+* URL: (Optional) The URL of the page to open. If no URL is specified,
+  a new blank window/tab is opened.
+
+* name: (Optional) The target attribute or the name of the window.
+  The following values are supported:
+
+======   ============
+VALUE:   DESCRIPTION:
+======   ============
+_blank   URL is loaded into a new window, or tab. This is the default.
+_parent  URL is loaded into the parent frame.
+_self	 URL replaces the current page.
+_top	 URL replaces any framesets that may be loaded.
+ name	 The name of the window (does not specify the title of the window).
+
+* specs: (Optional) A comma-separated list of items, no whitespaces.
+  The following values are supported:
+
+======                  ============
+VALUE:   		DESCRIPTION:
+======                  ============
+height   		The height of the window. Min. value is 100px.
+width			The width of the window. Min. value is 100.
+top			The top position of the window. Negative values not allowed.
+left     		The left position of the window. Negative values not allowed.
+menubar=yes|no|1|0	Whether or not to display the menu bar.
+titlebar=yes|no|1|0	Whether or not to display the title bar. Ignored unless the calling
+			application is an HTML Application or a trusted dialog box.
+
+
+* Open a new window. Use close() method to close the new window:
+  var MyWindow = window.open("www.google.com","_blank","width=200,height=100");
+  MyWindow.close();
+
+* Open a new window called "MsgWindow", and write some text into it:
+  var MyWindow = window.open("", "MsgWindow", "width=200,height=100");
+  MyWindow.document.write("<p>This is 'MsgWindow'. I am 200px wide and 100px tall!</p>");
+
+* Open a new window. Use the name property to return the name of the new window:
+  var MyWindow = window.open("", "MsgWindow", "width=200,height=100");
+  MyWindow.document.write("<p>This window's name is: " + myWindow.name + "</p>");
+
+* Note: You can simplify syntax without adding window object like this:
+  open("","_blank","height=300,width=500,top=250px,left=500px");

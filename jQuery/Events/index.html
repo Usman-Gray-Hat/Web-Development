@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- JS Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"></script>
+    <!-- JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <title>Events</title>
+</head>
+<style>
+    *{
+        font-family:sans-serif;
+    }
+    h1{
+        font-weight: 900;
+        letter-spacing: 2px;
+    }
+</style>
+<body>
+    <!-- Bootstrap Grid System -->
+    <div class="container mt-2">
+        <div class="row"> <!-- 1st Row -->
+            <div class="col-md-12">
+                <h1 class="text-center bg-dark text-white jumbotron">READY EVENT IN JQUERY</h1>
+            </div>
+        </div>
+
+        <div class="row"> <!-- 2nd Row -->
+            <div class="col-md-12">
+                <h2>Ready event occur only after the page loaded</h2>
+            </div>
+        </div>
+
+        <div class="row mt-5"> <!-- 3rd Row -->
+            <div class="col-md-12">
+                <a href="index.html" class="btn btn-secondary">Index</a>
+                <a href="click.html" class="btn btn-secondary">Click Event</a>
+                <a href="dbl.html" class="btn btn-secondary">Dbl Event</a>
+                <a href="contextmenu.html" class="btn btn-secondary">Contextmenu Event</a>
+                <a href="mouseenter.html" class="btn btn-secondary">Mouseenter Event</a>
+                <a href="mouseleave.html" class="btn btn-secondary">Mouseleave Event</a>
+                <a href="keyup.html" class="btn btn-secondary">Keyup Event</a>
+                <a href="focus.html" class="btn btn-secondary">Focus Event</a>
+                <a href="blur.html" class="btn btn-secondary">Blur Event</a>
+                <a href="on.html" class="btn btn-secondary">On Event</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripting -->
+    <script type="text/javascript">
+        $(document).ready(function(){
+            alert('Page loaded!');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+=================
+EVENTS IN JQUERY:
+=================
+
+* All the different visitor's actions that a web page can respond to, are called "Events".
+
+* An event represents the precise moment when something happens.
+
+* Example: Moving a mouse over an element or click on button or any element.
+
+* The term "fires/fired" is often used with events.
+
+* Example: The keyup event is fired, the moment you releases a key.
+
+* The $(document).ready() method allows us to execute a function when the document
+  is fully loaded.
+
+* Most common mouse events used in jQuery:
+
+=> Click
+
+=> Contextmenu
+
+=> Dblclick
+
+=> Mouseenter
+
+=> Mouseleave
+
+=> Keyup
+
+=> Focus
+
+=> Blur
+
+=> On
+
+============
+CLICK EVENT:
+============
+
+=> The click() method attaches an event handler function to an HTML element.
+
+==================
+CONTEXTMENU EVENT:
+==================
+
+=> The contextmenu() function executed, when the right mouse button is clicked.
+
+================
+DBL CLICK EVENT:
+================
+
+=> The dblclick() method attaches an event handler function to an HTML element when you double clicked.
+
+=================
+MOUSEENTER EVENT:
+=================
+
+=> The mouseenter() function executed when the mouse pointer enters the HTML 
+   element. 
+
+=================
+MOUSELEAVE EVENT:
+=================
+
+=> The mouseleave() function is executed when the mouse point leaves the HTML
+   element.
+
+============
+KEYUP EVENT:
+============
+
+=> The keyup() function is executed when a keyboard key is released.
+
+============
+FOCUS EVENT:
+============
+
+=> The focus() function is executed when the form field gets focused.
+
+===========
+BLUR EVENT:
+=========== 
+
+=> The blur() function is executed when the form field loses focus.
+
+=========
+ON EVENT: 
+=========
+
+=> The on() method attaches one or more event handlers for the selected elements.

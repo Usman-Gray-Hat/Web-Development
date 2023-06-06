@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Wnidow Open</title>
+</head>
+<body>
+
+    <!-- Bootstrap Grid System -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="jumbotron bg-dark text-white text-center">WINDOW OPEN METHOD IN JQUERY</h1>
+                <button type="button" class="btn btn-outline-info float-right mb-2" id="btnOpen">Open</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <button type="button" class="btn btn-outline-danger float-right" id="btnClose">Close</button>
+            </div>
+        </div>
+    </div>
+    <!-- JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <!-- JS Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"></script>
+    <!-- Scripting -->
+    <script type="text/javascript">
+        var MyWindow; // Reference variable
+        $("#btnOpen").click(function(){
+          MyWindow = window.open("","_blank","height=300,width=500,top=250px,left=500px");
+          MyWindow.document.write("this is new window"); // Writing text on new tab/window
+        });
+
+        $("#btnClose").click(function(){
+            MyWindow.close();
+        });
+
+        // Note: If you want to use close method, then must declare reference variable outside the function.
+    </script>
+</body>
+</html>

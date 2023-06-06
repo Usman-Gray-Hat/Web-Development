@@ -1,0 +1,10 @@
+============
+GET CONTENT:
+============
+
+* Four simple, but very useful jQuery methods for DOM manipulation are:
+
+1) text() -> Returns the plain text of the selected elements.
+2) html() -> Returns the content of the selected elements (Including HTML elements).
+3) val()  -> Returns the value of HTML form fields.
+4) attr() -> Return the attribute of an elements (Including href,title,style,class etc).

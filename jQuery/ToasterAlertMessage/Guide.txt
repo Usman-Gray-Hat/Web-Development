@@ -1,0 +1,43 @@
+=============================
+JQUERY TOASTER ALERT MESSAGE:
+=============================
+
+* To use jQuery Toastr message, you can follow the steps below:
+
+* Download the latest version of jQuery and toastr.js from their respective websites and add them to your project.
+
+* Link: https://codeseven.github.io/toastr/
+
+* Add the toastr CSS file to your HTML document's head section, like this:
+  <head>
+  <link rel="stylesheet" href="toastr.css"> (Minified file)
+  </head>
+
+* Include the jQuery and toastr JavaScript files at the bottom of the HTML document,
+  just before the closing body tag, like this:
+  <body>
+  <!-- Your HTML content goes here -->
+  <script src="jquery.js"></script>
+  <script src="toastr.js"></script> (Minified file)
+  </body>
+
+* To display a toastr message, call the toastr.success(), toastr.info(),
+  toastr.warning(), or toastr.error() method, like this:
+  // Display a success message
+  toastr.success('Your message was successfully sent!');
+
+  // Display an info message
+  toastr.info('Please wait while we process your request.');
+
+  // Display a warning message
+  toastr.warning('You have unsaved changes!');
+
+  // Display an error message
+  toastr.error('An error occurred while processing your request.');
+
+* You can customize the appearance and behavior of the toastr message 
+  by passing options to the toastr function.
+  For example, you can change the message text, set the message duration,
+  or add a close button to the message.
+
+* You can find more information about the available options in the toastr documentation.

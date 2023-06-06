@@ -1,0 +1,35 @@
+
+========================
+JQUERY WRAPPING METHODS:
+========================
+
+* wrap() => jQuery wrap() method is used to wrap specified elements around each selected element.
+
+
+
+* unwrap() => The unwrap() method is an built-in method in jQuery which is used to remove the parent element from the selected element.
+
+
+
+* wrapAll() => The wrapAll() method wraps specified HTML element(s) around all the selected elements.
+
+
+
+* wrapInner() => The wrapInner() method wraps specified HTML element(s) around the content (innerHTML) of each selected element.
+
+
+=======
+SYNTAX:
+=======
+
+ <script type="text/javascript">
+
+  $('selector').wrap("ParentElement");
+
+  $('selector').unwrap("ParentElement");
+
+  $('selector').wrapAll("ParentElement");
+
+  $('selector').wrapInner("<b><u><i></i></u></b>");
+
+ </script>

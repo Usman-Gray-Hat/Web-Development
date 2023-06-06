@@ -1,0 +1,6 @@
+======================
+EACH METHOD IN JQUERY:
+======================
+
+* jQuery's each() function is used to loop through each element of the target 
+  jQuery object, that contains one or more DOM elements.

@@ -1,0 +1,33 @@
+========================
+LOCAL STORAGE IN JQUERY:
+========================
+
+* The localStorage object stores data with no expiration date.
+
+* The data is not deleted when the browser is closed, and are available for future sessions.
+
+* Syntax => window.localStorage OR localStorage
+
+===========================
+SAVE DATA TO LOCAL STORAGE:
+===========================
+
+* Syntax => localStorage.setItem(key, value);
+
+=================================
+RETRIEVE DATA FROM LOCAL STORAGE:
+=================================
+
+* Syntax => var name = localStorage.getItem(key);
+
+===============================
+REMOVE DATA FROM LOCAL STORAGE:
+===============================
+
+* Syntax => localStorage.removeItem(key);
+
+=================================
+REMOVE ALL (CLEAR LOCAL STORAGE):
+=================================
+
+* Syntax => localStorage.clear();
