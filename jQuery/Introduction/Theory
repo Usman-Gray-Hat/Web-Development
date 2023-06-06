@@ -1,0 +1,140 @@
+=======
+JQUERY:
+=======
+
+* jQuery is a Javascript library.
+
+* jQuery convincingly simplifies Javascript programming.
+
+* jQuery is easy to learn.
+
+* A lightweight and concise JS library.
+
+* Helps to make JS programming easy and faster.
+
+* Feature rich and open source library which simplifies complex tasks.
+
+* Easy to use API which is compatible with browsers.
+
+* Simplifies common tasks through buit-in methods.
+
+* Reduce time in writing bulk lines of code.
+
+=====================
+JAVASCRIPT VS JQUERY:
+=====================
+-----------                                           -------
+JAVASCRIPT:                                           JQUERY:
+-----------                                           -------
+=> document.getElementById("IdName");                 $("#IdName")[0];
+
+=> document.getElementByClassName("ClassName");       $(".ClassName")[0];
+
+=> document.getElementByTagName("TagName");           $("TagName")[0];
+
+
+* jQuery is a lightweight, "WRITE LESS, DO MORE", JS library.
+
+* The purpose of jQuery is to make it much easier to use Javascript on your web page.
+
+* jQuery takes a lot of common tasks that require many lines of JS code to accomplish
+  and wraps them into built-in methods that you can call with a single line of code.
+
+* jQuery also simplifies a lot of the complicated things from JS, like Ajax call and
+  other DOM manipulation.
+
+* Note: When a web page or HTML page loads in the browsers, browser creates DOM
+  (document object model) for the page.
+
+* DOCUMENT - HTML page
+* OBJECT   - Tags or elements and attributes in HTML page.
+* MODEL    - In DOM, Tree structure of HTML elements.
+
+===============
+JQUERY LIBRARY:
+===============
+
+* The jQuery library contains the following features,
+
+=> HTML/DOM manipulation
+=> CSS manipulation
+=> HTML event methods
+=> Effects & animations
+=> AJAX
+
+===========================
+BENEFITS OF JQUERY OVER JS:
+===========================
+
+* Separates functionality between presentation and structure of web page.
+
+* Web page designing through unobtrusive JS.
+
+* Reduced library size is in kilobytes (KB).
+
+* Browser cache the library throughout websites instead of downloading it.
+
+* Simple and robust syntax.
+
+* Reduced lines of code.
+
+* Uses CSS3 selector specification.
+
+* Perform variety of functions through single library.
+
+* jQuery offers several utility functions.
+
+* Plugin framework third party and official plugins.
+
+* Any feature can be included through plugin, like jQuery Data Table.
+
+* Resolves cross browser issues.
+
+* jQuery implemented compatibility code.
+
+* Exclusive community where developers improve functionalities.
+
+* Offers several plugins which accelerate web development process strong community.
+
+* Supports Ajax by creating Ajax templates.
+
+* Offers smooth interfaces and efficient loading Ajax support.
+
+* Many of the biggest companies on the web who uses jQuery, such as:
+
+=> Google
+=> Microsoft
+=> IBM
+=> Netflix
+
+* Note: Before you start studying jQuery, you must have a basic knowledge of:
+
+=> HTML
+=> CSS
+=> Javascript
+
+* There are several ways to start using jQuery on your web site or web application.
+
+*  You can:
+=> Download the jQuery library from jQuery.com
+=> Include jQuery from a CDN, like google.
+
+* Note: There are two versions of jQuery available for downloading.
+
+1) Production Version - this is for your live website because it has been minified & compressed.
+
+2) Development Version - this is for testing and development (uncompressed and readable code).
+
+
+* If you don't want to download and host jQuery yourself, you can include it from
+  a CDN (Content Delivery Network).
+
+* Both google and Microsoft host jQuery.
+
+* To use jQuery from Google or Microsoft, use one of the following:
+
+=> Google CDN: 
+
+   <head>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   </head>
