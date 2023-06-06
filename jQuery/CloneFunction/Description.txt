@@ -1,0 +1,10 @@
+=========================
+CLONE FUNCTION IN JQUERY:
+=========================
+
+* The clone() method makes a copy of selected elements including child nodes,
+  text and attributes.
+
+* We can use 2 methods with clone() method:
+  a) AppendTo
+  b) PrependTo

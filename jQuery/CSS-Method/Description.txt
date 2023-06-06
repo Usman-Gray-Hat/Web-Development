@@ -1,0 +1,41 @@
+==================
+JQUERY CSS METHOD:
+==================
+
+* jQuery provides us CSS method which we can implement on our desired contents, sections, elements etc.
+
+* jQuery CSS method helps us to customize Css as same as in "In-Line-CSS".
+
+* We can also apply multiple properties on a single element.
+
+
+=============================
+SYNTAX FOR A SINGLE PROPERTY:
+============================= 
+
+<script>
+
+$('selector').css("property","value");
+
+</script>
+
+
+=================================
+SYNTAX FOR A MULTIPLE PROPERTIES:
+=================================
+
+<script>
+
+$('selector').css({
+
+"property1":"value",
+"property2":"value",
+"property3":"value",
+"property4":"value"
+
+});
+
+</script>
+
+
+NOTE: Write properties & values within quotations separated by ':'

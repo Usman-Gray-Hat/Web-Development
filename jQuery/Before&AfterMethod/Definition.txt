@@ -1,0 +1,11 @@
+========================
+BEFORE METHOD IN JQUERY:
+========================
+
+* The before() method inserts specified content in front of (before) the selected elements.
+
+=======================
+AFTER METHOD IN JQUERY:
+=======================
+
+* The after() method inserts specified content after the selected elements.

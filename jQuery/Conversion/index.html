@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Conversion</title>
+</head>
+<style>
+    *{
+        font-family: sans-serif;
+    }
+    h1{
+        font-weight: 900;
+        letter-spacing: 2px;
+    }
+</style>
+<body>
+
+
+    <!-- Bootstrap Grid System -->
+    <div class="container mt-1">
+        <div class="row"> <!-- 1st Row -->
+            <div class="col-md-12">
+                <h1 class="jumbotron text-center text-white bg-dark">CONVERSIONS IN JQUERY</h1>
+            </div>
+        </div>
+
+        <div class="row"> <!-- 2nd Row -->
+            <div class="col-md-12">
+                <h4 id="demo1">17$   <strong> Convert as int   </strong> </h4> 
+                <h4 id="demo2">21.5  <strong> Convert as int   </strong> </h4>
+                <h4 id="demo3">21.5  <strong> Convert as float </strong> </h4>
+                <h4 id="demo4">00:00 <strong> Convert as int   </strong> </h4>
+                <!-- Buttons -->
+                <button type="button" class="btn btn-info" id="before">   Before Conversion </button>
+                <button type="button" class="btn btn-success" id="after"> After Conversion  </button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <!-- JS Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"></script>
+
+    <!-- Scripting -->
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            
+            // Before Conversion
+            $("#before").click(function(){
+                var a = $("#demo1").text();
+                var b = $("#demo2").text();
+                var c = $("#demo3").text();
+                var d = $("#demo4").text();
+                alert(a);
+                alert(b);
+                alert(c);
+                alert(d);
+            });
+
+            // After Conversion
+            $("#after").click(function(){
+                var a = parseInt($("#demo1").text());
+                var b = parseInt($("#demo2").text());
+                var c = parseFloat($("#demo3").text());
+                var d = parseInt($("#demo4").text());
+                alert(a);
+                alert(b);
+                alert(c);
+                alert(d);
+            });
+
+        });
+
+    </script>
+</body>
+</html>

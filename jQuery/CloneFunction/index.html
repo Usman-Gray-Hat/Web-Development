@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- JS Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"></script>
+    <!-- JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <title>Clone Method</title>
+</head>
+<style>
+    *{
+        font-family:sans-serif;
+    }
+    h1{
+        font-weight:900;
+        letter-spacing: 2px;
+    }
+    #mySection{
+        height: 400px;
+        width: 700px;
+        border: black 2px ridge;
+        background-color: darkslateblue;
+        color: white;
+    }
+</style>
+<body>
+
+
+    <!-- Bootstrap Grid System -->
+    <div class="container mt-2">
+        <div class="row"> <!-- 1st Row -->
+            <div class="col-md-12">
+                <h1 class="jumbotron bg-dark text-white text-center">CLONE FUNCTION IN JQUERY</h1>
+            </div>
+        </div>
+
+
+        <div class="row"> <!-- 2nd Row -->
+            <div class="col-md-10">
+                <!-- Section -->
+                <section id="mySection">
+                    <h1>Heading 1</h1>
+                    <p>Paragraph 1</p>
+                </section>
+            </div>
+        </div>
+
+
+        <div class="row mt-5"> <!-- 3rd Row -->
+            <div class="col-md-8">
+                <div>
+                    <h3 id="text">This text will be cloned and placed in section after the click on clone button</h3>
+                    <button type="button" class="btn btn-primary" id="btnCloneAppend">Clone & Append</button> <!-- Clone And Append -->
+                    <button type="button" class="btn btn-success" id="btnClonePrepend">Clone & Prepend</button> <!-- Clone And Prepend -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Scripting -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            // Clone And Append
+            $('#btnCloneAppend').click(function(){
+                $('#text').clone().appendTo('#mySection');
+            });
+
+            // Clone And Prepend
+            $('#btnClonePrepend').click(function(){
+                $('#text').clone().prependTo('#mySection');
+            });
+        });
+    </script>
+    <!-- Note: Always use appendTo() or prependTo() method with clone function -->
+</body>
+</html>

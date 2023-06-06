@@ -1,0 +1,75 @@
+==========================
+TIMER FUNCTIONS IN JQUERY:
+==========================
+
+1) setTimeout: 
+
+* Executes a function only once, after waiting a specified number of milliseconds.
+
+* Syntax: setTimeout(functionName, milliseconds);
+
+
+2) setInterval:
+
+* Same as setTimeout(), but repeats the execution of the function continuously.
+
+* setInterval(functionName, milliseconds);
+
+
+~ Note: You can use these timer events on button clicks with different syntaxes.
+
+========
+SYNTAX:1
+========
+
+ <button type="button" class="btn btn-secondary" onclick="myTimer()">Set Timer</button> <!-- Using "onclick" event -->
+
+ <script type="text/javascript">
+
+ function myTimer()
+ {
+   function countDown()
+   {
+     alert('Time up!');
+   }
+   setTimeout(countDown,3000);
+ }
+
+ </script>
+
+========
+SYNTAX:2
+========
+ 
+ <button type="button" class="btn btn-secondary" onclick="setTimeout(myTimer,3000)">Set Timer</button> <!-- Using "onclick" event -->
+
+ <script type="text/javascript">
+
+  function myTimer()
+  {
+    alert('Time up!');
+  }
+
+ </script>
+
+========
+SYNTAX:3
+========
+ 
+ <button type="button" class="btn btn-secondary" id="btn">Set Timer</button> <!-- Using "Button id" -->
+
+ <script type="text/javascript">
+
+ $('#btn').click(function(){
+
+ function myTimer(){
+   alert('Time up!');
+ }
+
+ setTimeout(myTimer,3000);
+
+ });
+
+ </script>
+
+~ Note: Syntax 2 is highly recommended!

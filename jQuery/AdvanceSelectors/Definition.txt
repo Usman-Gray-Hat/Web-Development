@@ -1,0 +1,56 @@
+============================
+ADVANCE SELECTORS IN JQUERY:
+============================
+
+=> Universal Selector: 
+   $("*")
+
+
+=> Selecting List Items:
+   $("ul li") OR $("ol li")
+
+
+=> Selecting multiple elements, classes or ids:
+   $("h1, h1, div, p") OR $(".c1, .c2, .c3") OR $("#div1, #div2, #div3")
+
+
+=> Selecting specified child element inside parent elements.
+
+   <section id="section1">
+
+   <div id="div1">
+
+   <h1 id="heading1">This is heading from section 1 and div 1 </h1>
+   <h1 id="heading2">This is another heading from section 1 and div 1 </h1>
+
+   </div>
+
+   <div id="div2">
+
+   <h1 id="heading1">This is heading from section 1 and div 2 </h1>
+   <h1 id="heading2">This is another heading from section 1 and div 2 </h1>
+
+   </div>
+
+   </section>
+
+
+   <section id="section2">
+
+   <div id="div1">
+
+   <h1 id="heading1">This is heading from section 2 and div 1 </h1>
+   <h1 id="heading2">This is another heading from section 2 and div 1 </h1>
+
+   </div>
+
+   <div id="div2">
+
+   <h1 id="heading1">This is heading from section 2 and div 2 </h1>
+   <h1 id="heading2">This is another heading from section 2 and div 2 </h1>
+
+   </div>
+
+   </section>
+
+   $("#section1 #div2 #heading1") OR $("#section2 #div1 #heading2")

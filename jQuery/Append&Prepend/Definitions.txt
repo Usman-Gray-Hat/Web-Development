@@ -1,0 +1,11 @@
+========================
+APPEND METHOD IN JQUERY:
+========================
+
+* The append() method puts data inside an element at the last index.
+
+========================
+PREPEND METHOD IN JQUERY:
+========================
+
+* The prepend() method puts data inside an element at the first index.
