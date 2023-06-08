@@ -1,0 +1,15 @@
+CREATE DATABASE REGISTRATION;
+USE REGISTRATION;
+
+CREATE TABLE users
+(
+    id int PRIMARY KEY AUTO_INCREMENT,
+    fname varchar(50) not null,
+    lname varchar(50) not null,
+    gender varchar(50) not null,
+    age tinyint not null,
+    email varchar(50) not null,
+    password varchar(50) not null
+);
+
+SELECT * FROM users;
