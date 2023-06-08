@@ -1,0 +1,14 @@
+============================
+INTRODUCTION TO JQUERY AJAX:
+============================
+
+* Ajax is the art of exchanging data with a server and updating parts of a web page
+  without reloading the whole page.
+
+* Ajax stands for Asynchronous JavaScript and XML.
+
+* Ajax is a technique used by web developers in order to make websites behave like a
+  desktop applications.
+
+* Ajax is about loading data in the background and display it on the webpage, wihout
+  reloading the page.
