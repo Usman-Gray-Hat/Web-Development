@@ -1,0 +1,17 @@
+CREATE DATABASE TEST;
+USE TEST;
+
+CREATE TABLE students
+(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(50) NOT NULL,
+    gender VARCHAR(50) NOT NULL,
+    age TINYINT NOT NULL,
+    email VARCHAR(50) NOT NULL
+);
+
+INSERT INTO students (name,gender,age,email) VALUES ('Usman','Male',24,'usman@gmail.com');
+INSERT INTO students (name,gender,age,email) VALUES ('Bilal','Male',25,'bilal@gmail.com');
+INSERT INTO students (name,gender,age,email) VALUES ('Rida','Female',22,'rida@gmail.com');
+INSERT INTO students (name,gender,age,email) VALUES ('Maham','Female',23,'maham@gmail.com');
+SELECT * FROM students;

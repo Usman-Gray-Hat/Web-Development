@@ -1,0 +1,77 @@
+=============
+AJAX METHODS:
+=============
+
+* The jQuery ajax() method provides core functionality of Ajax in jQuery.
+
+* It sends asynchronous HTTP requests to the server.
+
+* The best thing about $.ajax() method is that we can use this method in place of
+  $.get() , $.post() and $.load() methods.
+
+* Syntax: $.ajax({options});
+
+* Note: Options can be specified with the help of "Name Value Pair".
+
+
+* Most common options are;
+
+  => type: It is used to specify the type of request.
+
+  => url: It is used to specify the URL to send the request to.
+
+  => data: It is used to specify the data to be sent to the server within key value pair.
+
+  => dataType: No need to define this option. It will auto detect the type of data which can either be in xml or json or html.
+
+  => contentType: Use this option if your form contains file controller. File controller can be used for image, docx file, excel sheet, Word file etc.
+
+  => processData: Use this option only if you are not sending data in Key Value Pair, instead you are using form object.
+
+  => success: It is a function to be run when the request succeeds.
+
+  => error: It is a function to be run if the requests fails.
+
+  => complete: It is a function to be run when the request is being finished.
+
+  => async: It's default value is true. It indicates whether the request should be handled asynchronous or not.
+
+
+* Note: If you are not passing value to data option within key value pair, then must use processData option and
+        give the value 'false' (without quotation).
+        Give contentType option the value "multipart/formdata" or "false". (false without quotation).
+        if "multipart/formdata" is unable to do work, then simply give false value to contentType option.
+
+
+~ EXAMPLE (1) 
+
+      <script>
+        $.ajax({
+            type: "post",
+            url: "process.php",
+            data: {name:name, age:age, gender:gender},
+            success: function (data,status) 
+            {
+                
+            }
+        });
+      </script>
+
+
+~ EXAMPLE (2)
+
+      <script>
+        $.ajax({
+            type: "post",
+            url: "process.php",
+            data: FormObject,
+            processData: false,
+            contentType: false,
+            success: function (data,status) 
+            {
+                
+            }
+        });
+      </script>
+
+* Note: There are 2 parameters in success function, data catches the response which is being sent back from the server to client.
