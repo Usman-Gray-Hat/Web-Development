@@ -1,0 +1,26 @@
+
+================
+XMLHttpResquest:
+================
+
+* Ajax enables an application to send and recieve only the data that is required as a result 
+  that is reduced traffic between the client and the server and better performance.
+
+* The keystone of AJAX is the XMLHttpRequest object.
+
+* All the modern browsers support the XMLHttpRequest object.
+
+* The XMLHttpRequest object can be used to exchange the data with a server behind the scenes.
+
+* XMLHttpRequest is used by JavaScript to communicate with the server side components.
+
+* Transfers data in the form of plain text, XML, or JSON format.
+
+* Retrieves data from the server asynchronously.
+
+* Allows web pages to request data from a server using client-side code.
+
+* Provides properties and methods to access the server response.
+
+* AJAX improves performance of the page by enabling users to carry on with their tasks
+  after sending a request to the server.
