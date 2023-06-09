@@ -1,0 +1,13 @@
+CREATE DATABASE DEMO;
+USE DEMO;
+CREATE TABLE users
+(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    fname VARCHAR(50),
+    lname VARCHAR(50),
+    gender VARCHAR(50),
+    age TINYINT,
+    email VARCHAR(50),
+    password VARCHAR(50)
+);
+SELECT * FROM users;
