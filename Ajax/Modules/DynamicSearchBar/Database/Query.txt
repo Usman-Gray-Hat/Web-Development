@@ -1,0 +1,26 @@
+CREATE DATABASE PRACTICE;
+USE PRACTICE;
+
+CREATE TABLE students
+(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(50) NOT NULL
+);
+
+INSERT INTO students (name) VALUES ('Usman');
+INSERT INTO students (name) VALUES ('Umer');
+INSERT INTO students (name) VALUES ('Ali');
+INSERT INTO students (name) VALUES ('Aashir');
+INSERT INTO students (name) VALUES ('Bilal');
+INSERT INTO students (name) VALUES ('Babar');
+INSERT INTO students (name) VALUES ('Amir');
+INSERT INTO students (name) VALUES ('Zeeshan');
+INSERT INTO students (name) VALUES ('Zain');
+INSERT INTO students (name) VALUES ('Saad');
+INSERT INTO students (name) VALUES ('Sarim');
+INSERT INTO students (name) VALUES ('Fahad');
+INSERT INTO students (name) VALUES ('Basit');
+INSERT INTO students (name) VALUES ('Zahid');
+INSERT INTO students (name) VALUES ('Faizan');
+INSERT INTO students (name) VALUES ('Uzair');
+SELECT * FROM students;

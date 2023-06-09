@@ -1,0 +1,25 @@
+
+===================
+SWEET ALERT2 FILES:
+===================
+
+<!-- Sweet Alert2 CSS file -->
+<link rel="stylesheet" href="dist/sweetalert2.min.css">
+
+<!-- Sweet Alert2 JS file -->
+<script src="dist/sweetalert2.all.min.js"></script>
+
+
+
+NOTE: (1) Place dist folder inside your main project folder.
+      (2) Must include jQuery CDN before Sweet Alert2 Files,otherwise Sweet Alert2 message popup modal won't work. 
+      (3) Check below example:
+
+<!-- JQuery CDN -->
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+<!-- Sweet Alert2 CSS file -->
+<link rel="stylesheet" href="dist/sweetalert2.min.css">
+
+<!-- Sweet Alert2 JS file -->
+<script src="dist/sweetalert2.all.min.js"></script>

@@ -1,0 +1,27 @@
+CREATE DATABASE PRACTICE;
+
+USE PRACTICE;
+
+CREATE TABLE students
+(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(50) NOT NULL,
+    age TINYINT NOT NULL,
+    gender VARCHAR(50) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    address VARCHAR(500) NOT NULL
+);
+
+ALTER TABLE students AUTO_INCREMENT=101;
+
+INSERT INTO students (name,age,gender,email,address) VALUES ('Usman Hameed',24,'Male','usmanhameed1790@gmail.com','Bahria Town');
+INSERT INTO students (name,age,gender,email,address) VALUES ('Bilal Amir',25,'Male','bilalamir@gmail.com','DHA Phase 6');
+INSERT INTO students (name,age,gender,email,address) VALUES ('Rida Arshad',22,'Female','ridaarshad@gmail.com','Defense Khayban-e-Ittehad');
+INSERT INTO students (name,age,gender,email,address) VALUES ('Taha Maqsood',20,'Male','tahamaqsood@gmail.com','Malir Cantt');
+INSERT INTO students (name,age,gender,email,address) VALUES ('Erum Khan',25,'Female','erumkhan@gmail.com','Saadi Town');
+INSERT INTO students (name,age,gender,email,address) VALUES ('Usman Khan',27,'Male','usmankhan@gmail.com','Gulistan-e-Johar');
+INSERT INTO students (name,age,gender,email,address) VALUES ('Maham Malik',21,'Female','mahammalik@gmail.com','Gulshan-e-Iqbal');
+INSERT INTO students (name,age,gender,email,address) VALUES ('Raheel Azam',26,'Male','raheelazam@gmail.com','Gulshan-e-Iqbal');
+INSERT INTO students (name,age,gender,email,address) VALUES ('Talha Chaudhary',25,'Male','talhachaudhary@gmail.com','DHA Phase 7');
+INSERT INTO students (name,age,gender,email,address) VALUES ('Maheen Shahid',23,'Female','maheenshahid@gmail.com','Gulshan-e-Maymaar');
+SELECT * FROM students;
