@@ -1,0 +1,13 @@
+CREATE DATABASE DEMO;
+USE DEMO;
+CREATE TABLE PACKAGE
+(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR(50),
+    email VARCHAR(50),
+    contact_no VARCHAR(50),
+    package_name VARCHAR(900),
+    total VARCHAR(50)
+);
+
+SELECT * FROM PACKAGE;

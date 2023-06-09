@@ -1,0 +1,11 @@
+*{
+    font-family: sans-serif;
+    font-size: 14px;
+}
+.card-title, .modal-title{
+    font-weight: 900;
+}
+.heading{
+    font-weight: 900;
+    letter-spacing: 1px;
+}
