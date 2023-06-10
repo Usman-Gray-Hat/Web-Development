@@ -1,0 +1,27 @@
+==========================
+CONTAINERS IN BOOTSTRAP 5:
+==========================
+
+* Bootstrap requires a containing element to wrap site contents.
+
+* Containers are used to gather and group the content inside of them, and there are
+  two container classes available:
+  1) container
+  2) container-fuild 
+
+* The .container class provides a responsive fixed width container.
+
+* The .container-fluid class provides a full width container, spanning the entire
+  width of the viewport.
+
+* By default, containers have left and right padding, with no top or bottom padding.
+
+* Therefore, we often use spacing utilities , such as extra padding and margins to 
+  make them look even better.
+
+* For example, .pt-5 means "Add a large top padding".
+
+* Other utilities, such as borders and colors, are also often used together with containers.
+
+* Note: You can also use the .container-sm|md|lg|xl classes to determine when the container
+        should be responsive.

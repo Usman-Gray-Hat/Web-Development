@@ -1,0 +1,80 @@
+======
+GUIDE:
+======
+
+* Bootstrap provides a set of animation classes that you can use to add animations to your web pages.
+
+* These classes are part of the Animate.css library, which is included in Bootstrap.
+
+* Note: For using animation in your html elements, you first need to add Bootstrap 5 CDN
+  as well as Bootstrap 5 animation CDN.
+
+===========================
+COMPULSORY CDNs TO INCLUDE:
+===========================
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- Bootstrap Animation CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+=============================
+BOOTSTRAP 5 ANIMATON CLASSES:
+=============================
+
+*  Here are some of the animation classes that Bootstrap provides:
+
+-> animate__animated: This class is required for all animations.
+   You should add this class to the element you want to animate.
+
+-> animate__bounce: This class will make the element bounce.
+
+-> animate__flash: This class will make the element flash.
+
+-> animate__pulse: This class will make the element pulse.
+
+-> animate__rubberBand: This class will make the element rubber band.
+
+-> animate__shakeX: This class will make the element shake horizontally.
+
+-> animate__shakeY: This class will make the element shake vertically.
+
+-> animate__headShake: This class will make the element shake its head.
+
+-> animate__swing: This class will make the element swing.
+
+-> animate__tada: This class will make the element tada.
+
+-> animate__wobble: This class will make the element wobble.
+
+-> animate__jello: This class will make the element jello.
+
+-> animate__heartBeat: This class will make the element beat like a heart.
+
+-> animate__fadeIn: This class will give the element fadeIn effect.
+
+-> animate__fadeOut: This class will give the element fadeOut effect.
+
+-> animate__zoomIn: This class will give the element zoomIn effect.
+
+-> animate__zoomOut: This class will give the element zoomOut effect.
+
+* To use these classes, simply add them to the element you want to animate,
+  along with the animate__animated class. For example:
+
+  <div class="animate__animated animate__bounce">This element will bounce</div>
+
+===========================
+ANIMATION DURATION & DELAY:
+===========================
+
+* You can also control the duration and delay of the animation by using the
+  animate__duration-* and animate__delay-* classes.
+
+* For example, to make an animation last for 2 seconds,
+  you can add the class animate__duration-2s to the element.
+
+* To add a delay of 1 second before the animation starts,
+  you can add the class animate__delay-1s to the element.

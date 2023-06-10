@@ -1,0 +1,38 @@
+===========================
+DOWNLOAD AND USE BOOTSTRAP:
+=========================== 
+
+* There are two ways to use bootstrap in your project.
+
+=> Download bootstrap 5 from getbootstrap.com.
+=> Paste the folder inside your project folder and unzip it.
+=> Now you have two files to link within your project.
+=> 1st file exists inside css folder and 2nd file exists inside js folder.
+=> Open your Editor > open your project > link css file within head tag.
+
+<head>
+<link rel="stylesheet" href="css/bootstrap.min.css"> 
+</head>
+
+=> Now, link js file before the closing tag of body.
+
+<body>
+
+ Your Content....
+ Your Content....
+ Your Content....
+ Your Content....
+
+<script src="js/bootstrap.min.js">
+</body>
+
+* Note: You can also include Bootstrap 5 from a CDN (Content Delivery Network).
+
+* Just search Bootstrap 5 CDN on google > copy CDN and paste it within head tag.
+
+<head>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
