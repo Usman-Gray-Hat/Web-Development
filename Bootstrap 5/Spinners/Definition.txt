@@ -1,0 +1,43 @@
+==========================
+BOOTSTRAP LOADING SPINNER:
+==========================
+
+* Spinners are used to provide loading feature.
+
+* To create spinner/loader, use the .spinner-border class.
+
+==================
+COLORFUL SPINNERS:
+==================
+
+* Spinner-border class followed by one of the contextual classes .text-success, .text-info,
+  .text-warning, .text-danger, .text-primary, .text-light, .text-dark.
+
+=================
+GROWING SPINNERS:
+=================
+
+* Use the .spinner-grow class if you want the spinner/loader to grow instead of spin.
+
+=============
+SPINNER SIZE:
+=============
+
+* Use .spinner-border-sm or .spinner-grow-sm to create a smallest spinner.
+
+===============
+SPINNER BUTTON:
+===============
+
+* You can also add spinners to a button, with or without text.
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,38 @@
+===================
+BOOTSTRAP 5 NAVBAR:
+===================
+
+* A Navigation bar or navbar is a navigation header or navigation links which is used to navigate
+  accross the websites, that is placed mostly at the top of the page.
+
+* With bootstrap, A navigation bar can extend or collapse, depending on the screen size.
+
+* A standard Navigation bar is created with the .navbar class, followed by a responsive collapsing
+  class: .navbar-expand-sm|md|lg|xl|xxl (stacks the navbar vertically on XXlarge, Extra large,
+  medium or small screens). 
+
+* To add links inside the navbar, use either <ul> element or <div> with the class="navbar-nav"
+  then add <li> elements with a .nav-item class followed by an <a> element with a .nav-link class.
+
+* Remove the .navbar-expand class to create a navigation bar that will always be vertical.
+
+* Add the .justify-content-center class to center the navigation bar links.
+
+* Note: .justify-content-center class cannot work with container-fluid. So remove container-fluid
+  div if you want to center your navbar links.
+
+* Use any of the bg-color classes to change the background color of the navbar. 
+  (bg-primary, bg-success, bg-dark, bg-light, bg-info, bg-secondary, bg-danger, bg-warning) etc.
+
+* TIP: Add a white text colors to all links in the navbar with the .navbar-dark class or use the
+  .navbar-light class within <nav> element to add a black text color.
+
+* Active/Disabled State: Add the .active class to an <a> element to highlight the current link,
+  or the .disabled class to indicate that the link is un-clickable.
+
+* The .navbar-brand class is used to highlight the brand/logo/project name of your page.
+
+* Use .me-auto class with navbar-brand class to align nav links to the left side. 
+
+~ Important: For shortcut, In vs code, write b4-navbar and press enter to get complete navbar element structure.
+  But make sure you have already installed bootstrap in your VS code editor.

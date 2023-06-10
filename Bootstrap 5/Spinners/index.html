@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<style>
+    *{
+        font-family: sans-serif;
+    }
+    h1{
+        font-weight: 900;
+        letter-spacing: 2px;
+    }
+</style>
+<body>
+
+    <!-- Bootstrap Grid System -->
+    <div class="container mt-3">
+        <div class="row"> <!-- 1st Row -->
+            <div class="col-md-12">
+                <h1 class="jumbotron text-center text-white bg-dark">BOOTSTRAP LOADING SPINNERS</h1>
+            </div>
+        </div>
+
+        <div class="row"> <!-- 2nd Row -->
+            <div class="col-md-12">
+
+                <span class='input-group'>
+                <div class="spinner-border text-primary"> <!-- Blue Spinner --> </div> &nbsp; <h3>Text-Primary</h3>
+                </span>
+
+                <span class="input-group">
+                <div class="spinner-border text-success"> <!-- Green Spinner --> </div> &nbsp; <h3>Text-Success</h3>
+                </span>
+
+                <span class="input-group">
+                <div class="spinner-border text-info">    <!-- Light Blue Spinner --> </div> &nbsp; <h3>Text-Info</h3>
+                </span>
+
+                <span class="input-group">
+                <div class="spinner-border text-warning"> <!-- Yellow Spinner --> </div> &nbsp; <h3>Text-Warning</h3>
+                </span>
+
+                <span class="input-group">
+                <div class="spinner-border text-danger">  <!-- Red Spinner --> </div> &nbsp; <h3>Text-Danger</h3>
+                </span>
+ 
+                <span class="input-group">
+                <div class="spinner-border text-light">  <!-- Light Spinner --> </div> &nbsp; <h3>Text-Light</h3>
+                </span> 
+
+                <span class="input-group">
+                <div class="spinner-border text-dark">  <!-- Dark Spinner --> </div> &nbsp; <h3>Text-Dark</h3>
+                </span>      
+                
+                <span class="input-group">
+                <div class="spinner-grow text-primary">  <!-- Spinner Grow --> </div> &nbsp; <h3>Spinner Growing With Text-Primary</h3>
+                </span>  
+            </div>
+        </div>
+
+        <div class="row mt-4"> <!-- 3rd Row -->
+            <div class="col-md-12">
+                <button type="button" class="btn btn-success">Submit <div class="spinner-border spinner-border-sm"> <!-- Spinner On Button --> </div></button>
+            </div>
+        </div>
+
+        <div class="row mt-4"> <!-- 4th Row -->
+            <div class="col-md-12">
+                <button type="button" class="btn btn-success" id="btn" onclick="setTimeout(timer,2000)">Submit  <div id="mySpinner" > <!-- Spinner On Button Click --> </div> </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <!-- JS Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"></script>
+
+    <!-- Scripting -->
+    <script type="text/javascript">
+        $("#btn").click(function(){
+            $("#mySpinner").addClass("spinner-border spinner-border-sm");
+  
+        });
+            
+        function timer() //This function will be executed after 2 sec.
+        {
+            location.reload();
+        }
+    </script>
+</body>
+</html>
