@@ -1,0 +1,28 @@
+CREATE TABLE courses 
+(
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(255),
+  description VARCHAR(255),
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE instructors 
+(
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(255),
+  email VARCHAR(255),
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE reviews 
+(
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  user_name VARCHAR(255),
+  rating INT,
+  comment VARCHAR(255),
+  course_id INT,
+  instructor_id INT,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (course_id) REFERENCES courses(id),
+  FOREIGN KEY (instructor_id) REFERENCES instructors(id)
+);
