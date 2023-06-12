@@ -6,10 +6,10 @@ CREATE TABLE DEMO
     id INT PRIMARY KEY AUTO_INCREMENT,
     first_name VARCHAR(50),
     last_name VARCHAR(50),
-    date_created TIMESTAMP
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
 ================
 SNIPPET QUERY 2:
 ================
-ALTER TABLE your_table_name ADD column_name TIMESTAMP;
+ALTER TABLE your_table_name ADD column_name TIMESTAMP CURRENT_TIMESTAMP;
