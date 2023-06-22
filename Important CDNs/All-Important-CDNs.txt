@@ -7,6 +7,8 @@ CSS FILES & LIBRARIES:
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <!-- Toaster CSS CDN -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!-- Data Table Style CDN -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
 
 
 =====================
@@ -21,6 +23,8 @@ JS FILES & LIBRARIES:
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
     <!-- Toaster JS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <!-- Data Table CDN -->
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
 
 
 ===============================
