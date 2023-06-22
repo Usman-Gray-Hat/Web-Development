@@ -1,0 +1,49 @@
+======================
+CSS FILES & LIBRARIES:
+======================
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- Toaster CSS CDN -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+
+=====================
+JS FILES & LIBRARIES:
+=====================
+
+    <!-- JQuery CDN, Bootstrap JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+    <!-- Toaster JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+
+===============================
+TOASTER ALERT MESSAGE FUNCTION:
+===============================
+
+// Toaster function need to define seconds to be live and the text to be shown. 
+function toaster(text, duration)
+{
+    Toastify({
+      text: text,
+      duration: duration*1000,
+      newWindow: true,
+      close: true,
+      gravity: "top",
+      position: "center",
+      pauseOnHover: true,
+      style: {
+        "background": "rgb(68 67 67 / 84%)",
+        "backdrop-filter": "saturate(180%) blur(20px)",
+        "-webkit-backdrop-filter": "saturate(180%) blur(20px)",
+        "border-radius": "20px",
+      }, 
+      onClick: function(){} 
+    }).showToast();
+}
