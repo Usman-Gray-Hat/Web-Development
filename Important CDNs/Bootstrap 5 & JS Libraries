@@ -12,8 +12,7 @@ BOOTSTRAP 5.2.1 , JAVASCRIPT 5.2.0 & JQUERY 3.5.1 CDN:
 OTHER SCRIPTS OF JQUERY & BOOTSTRAP:
 ====================================
 
-    <!-- Bootstrap JavaScript Libraries -->
-    <!-- JQuery CDN -->
+    <!-- jQuery CDN, Bootstrap JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
