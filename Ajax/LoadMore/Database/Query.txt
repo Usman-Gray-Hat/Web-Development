@@ -1,0 +1,19 @@
+CREATE DATABASE load_more;
+USE load_more;
+CREATE TABLE users
+(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(50),
+    age TINYINT
+);
+INSERT INTO users (name,age) VALUES ('Usman Hameed',24);
+INSERT INTO users (name,age) VALUES ('Bilal Amir',24);
+INSERT INTO users (name,age) VALUES ('Talha Chaudhary',25);
+INSERT INTO users (name,age) VALUES ('Shahzaib Khan',25);
+INSERT INTO users (name,age) VALUES ('Raheel Azam',26);
+INSERT INTO users (name,age) VALUES ('Zain Khawar',23);
+INSERT INTO users (name,age) VALUES ('Taha Maqsood',21);
+INSERT INTO users (name,age) VALUES ('Aashir Ali Khan',24);
+INSERT INTO users (name,age) VALUES ('Farhan Ali',25);
+INSERT INTO users (name,age) VALUES ('Danish Arshad',26);
+SELECT * FROM users;
