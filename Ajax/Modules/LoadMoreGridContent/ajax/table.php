@@ -30,7 +30,7 @@ if(isset($_POST['rd']) && isset($_POST['rd'])!='')
 
         // 2nd row
         $card.= "<div class='row' id='remove_row'>
-            <div class='col-md-12'>
+            <div class='col-md-2 mx-auto'>
             <button type='button' class='btn btn-outline-primary mt-3' id='load-more' data-id='$id'>Load more</button>
             </div>
           </div>"; //2nd row ends
