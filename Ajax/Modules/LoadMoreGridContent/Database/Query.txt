@@ -1,0 +1,33 @@
+CREATE DATABASE load_more;
+USE load_more;
+CREATE TABLE users
+(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(50),
+    gender VARCHAR(50),
+    age TINYINT,
+    email VARCHAR(50),
+    city VARCHAR(50),
+    salary VARCHAR(50)
+);
+INSERT INTO users VALUES (null,'Usman Hameed','Male',24,'usman@gmail.com','Karachi','250000');
+INSERT INTO users VALUES (null,'Bilal Amir','Male',25,'bilal@gmail.com','Lahore','250000');
+INSERT INTO users VALUES (null,'Talha Chaudhary','Male',25,'talha@gmail.com','Lahore','400000');
+INSERT INTO users VALUES (null,'Shahzaib Khan','Male',25,'sk@gmail.com','Karachi','300000');
+INSERT INTO users VALUES (null,'Rida Arshad','Female',22,'rida@gmail.com','Faisalabad','90000');
+INSERT INTO users VALUES (null,'Raheel Azam','Male',26,'raheel@gmail.com','Karachi','100000');
+INSERT INTO users VALUES (null,'Zain Khawar','Male',23,'zain@gmail.com','Karachi','130000');
+INSERT INTO users VALUES (null,'Aiman Nasir','Female',24,'aiman@gmail.com','Faisalabad','250000');
+INSERT INTO users VALUES (null,'Taha Maqsood','Male',21,'taha@gmail.com','Karachi','300000');
+INSERT INTO users VALUES (null,'Rabia Waheed','Female',24,'rabia@gmail.com','Karachi','75000');
+INSERT INTO users VALUES (null,'Aashir Ali Khan','Male',24,'aashir@gmail.com','Karachi','200000');
+INSERT INTO users VALUES (null,'Farhan Ali','Male',25,'farhan@gmail.com','Karachi','500000');
+INSERT INTO users VALUES (null,'Sawera Arif','Female',23,'sawera@gmail.com','Karachi','100000');
+INSERT INTO users VALUES (null,'Danish Arshad','Male',26,'danish@gmail.com','Lahore','250000');
+INSERT INTO users VALUES (null,'Arif Ali','Male',22,'arif@gmail.com','Faisalabad','80000');
+INSERT INTO users VALUES (null,'Tooba Iqbal Qureshi','Female',25,'tooba@gmail.com','Quetta','300000');
+INSERT INTO users VALUES (null,'Nouman Khan','Male',23,'nouman@gmail.com','Quetta','120000');
+INSERT INTO users VALUES (null,'Babar Azam','Male',28,'babar@gmail.com','Lahore','250000');
+INSERT INTO users VALUES (null,'Fahad Ahmed','Male',24,'fahad@gmail.com','Faisalabad','250000');
+INSERT INTO users VALUES (null,'Maryum Atif','Female',24,'maryum@gmail.com','Faisalabad','250000');
+SELECT * FROM users;
