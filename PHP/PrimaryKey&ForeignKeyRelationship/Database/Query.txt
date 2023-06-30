@@ -1,0 +1,65 @@
+CREATE DATABASE practice;
+USE practice;
+CREATE TABLE admins
+(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(50),
+    email VARCHAR(50),
+    password VARCHAR(50)
+);
+
+INSERT INTO admins (name,email,password) 
+VALUES ('Usman Hameed','usmanhameed1790@gmail.com',MD5('x'));
+
+INSERT INTO admins (name,email,password) 
+VALUES ('Anas Waseem','anas_waq@gmail.com',MD5('a'));
+
+INSERT INTO admins (name,email,password) 
+VALUES ('Bilal Amir','bilalamir90@gmail.com',MD5('b'));
+
+CREATE TABLE users
+(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(50),
+    gender VARCHAR(50),
+    age TINYINT,
+    qualification VARCHAR(50),
+    admin_id int,
+    FOREIGN KEY (admin_id) REFERENCES admins(id)
+);
+
+INSERT INTO users (name,gender,age,qualification,admin_id) 
+VALUES ('Shadab Khan','Male',22,'Bachelors',1);
+
+INSERT INTO users (name,gender,age,qualification,admin_id) 
+VALUES ('Fakhar Zaman','Male',34,'BBA',1);
+
+INSERT INTO users (name,gender,age,qualification,admin_id) 
+VALUES ('Babar Azam','Male',29,'Masters',2);
+
+INSERT INTO users (name,gender,age,qualification,admin_id) 
+VALUES ('Shaheen Afridi','Male',22,'Bachelors',2);
+
+INSERT INTO users (name,gender,age,qualification,admin_id) 
+VALUES ('Maham Malik','Female',23,'Software Engineer',3);
+
+INSERT INTO users (name,gender,age,qualification,admin_id) 
+VALUES ('Naseem Shah','Male',21,'Intermediate',3);
+
+INSERT INTO users (name,gender,age,qualification,admin_id) 
+VALUES ('Ayesha Tarrar Khan','Female',27,'MBA',1);
+
+INSERT INTO users (name,gender,age,qualification,admin_id) 
+VALUES ('Muzammil Khan Niazi','Male',25,'BSCS',2);
+
+INSERT INTO users (name,gender,age,qualification,admin_id) 
+VALUES ('Rida Arshad','Female',24,'BCOM',1);
+
+INSERT INTO users (name,gender,age,qualification,admin_id) 
+VALUES ('Bushra Khan','Female',23,'BBA',2);
+
+INSERT INTO users (name,gender,age,qualification,admin_id) 
+VALUES ('Saad Rajpoot','Male',26,'Media Sciences',3);
+
+SELECT * FROM admins;
+SELECT * FROM users;
