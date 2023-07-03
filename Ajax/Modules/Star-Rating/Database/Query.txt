@@ -18,7 +18,7 @@ CREATE TABLE course_ratings
     contact VARCHAR(50),
     review VARCHAR(600),
     rating int,
-    date_created TIMESTAMP CURRENT_TIMESTAMP
+    date_created TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 SELECT * FROM courses;
 SELECT * FROM course_ratings;
