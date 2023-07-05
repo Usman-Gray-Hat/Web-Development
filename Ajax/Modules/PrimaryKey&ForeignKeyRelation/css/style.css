@@ -1,0 +1,25 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+}
+.heading{
+    font-size: 17px;
+}
+.card-title{
+    font-weight: 900;
+}
+.modal-header{
+    border: none !important;
+}
+.modal-title{
+    font-weight: 900;
+    margin-left: auto;
+}
+.modal-footer{
+    margin-right: auto;
+    border: none !important;
+}
+.jumbo-heading{
+    font-weight: 900;
+    letter-spacing: 1px;
+}
