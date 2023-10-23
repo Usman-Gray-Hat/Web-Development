@@ -9,7 +9,7 @@ CREATE TABLE DEMO
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
-================
+================ 
 SNIPPET QUERY 2:
 ================
 CREATE TABLE DEMO
