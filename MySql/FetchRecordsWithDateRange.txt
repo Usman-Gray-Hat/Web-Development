@@ -1,0 +1,18 @@
+=======
+SYNTAX:
+=======
+SELECT * FROM table_name 
+WHERE DATE_CREATED BETWEEN '2023-07-11' AND DATE_ADD('2023-07-17', INTERVAL 1 DAY)
+ORDER BY ID ASC
+
+=================================================================
+IMPLEMENTATION ON SERVER SIDE PAGINATION USING JQUERY DATATABLES:
+=================================================================    
+
+$from = date('y-m-d',strtotime($_POST['from']));
+$to = date('y-m-d',strtotime($_POST['to']));
+
+$query = "SELECT * FROM payments 
+WHERE DATE_CREATED BETWEEN '$from' AND DATE_ADD('$to', INTERVAL 1 DAY)
+ORDER BY ID ASC";
+$result = mysqli_query($conn, $query);
