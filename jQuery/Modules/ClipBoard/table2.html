@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Amount To Words</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Heading -->
+    <div class="container mb-3">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center bg-dark text-white py-5 main-heading">COPIED TO CLIPBOARD FUNCTIONALITY USING JQUERY</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <a href="table.html" class="btn btn-primary float-end">Go To Previous Page</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <table class="table table-bordered table-hover table-striped text-center">
+                    <thead class="text-uppercase">
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Copy</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Usman Hameed</td>
+                            <td>usmanhameed1790@gmail.com</td>
+                            <td><i class="fas fa-paperclip" title="copy"></i></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Bilal Amir</td>
+                            <td>bilalamir@gmail.com</td>
+                            <td><i class="fas fa-paperclip" title="copy"></i></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Raheel Azam</td>
+                            <td>raheelazam@gmail.com</td>
+                            <td><i class="fas fa-paperclip" title="copy"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+        <!-- Copied to clipboard popup -->
+        <div class="copied-popup">Copied to clipboard!</div>
+    <!-- JQuery CDN, Bootstrap JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>    
+    <script>
+        $(document).on('click', '.fas.fa-paperclip', function(){
+            var email = $(this).closest('td').prev('td').text();
+            email.trim(); // For removing trailing white spaces
+
+            // Create a temporary input element to copy the text
+            var tempInput = $("<input>");
+            $("body").append(tempInput);
+            tempInput.val(email).select();
+            document.execCommand("copy");
+            tempInput.remove(); // Remove temporary input after copying the content
+    
+            // Display the "Copied to clipboard" popup
+            $(".copied-popup").fadeIn().delay(1500).fadeOut();
+        });
+    </script>
+</body>
+</html>
