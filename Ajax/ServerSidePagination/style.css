@@ -1,0 +1,15 @@
+*{
+    font-family: sans-serif;
+    font-size: 15px;
+}
+.jumbo-heading{
+    font-weight: 900;
+}
+.dataTables_wrapper .dataTables_filter input{
+    margin-bottom: 7px;
+}
+table{
+    border-top: solid 3px black;
+    border-left: solid 2px black;
+    border-right: solid 2px black;
+  }
