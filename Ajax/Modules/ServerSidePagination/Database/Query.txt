@@ -1,0 +1,19 @@
+CREATE DATABASE server_side_pagination;
+USE server_side_pagination;
+
+CREATE TABLE users
+(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(50)
+);
+INSERT INTO users (name) VALUES ('Usman Hameed');
+INSERT INTO users (name) VALUES ('Bilal Amir');
+INSERT INTO users (name) VALUES ('Zain Khawar');
+INSERT INTO users (name) VALUES ('Talha Chaudhary');
+INSERT INTO users (name) VALUES ('Fahad Ahmed');
+INSERT INTO users (name) VALUES ('Saad Rajpoot');
+INSERT INTO users (name) VALUES ('Danish Arshad');
+INSERT INTO users (name) VALUES ('Aashir Ali Khan');
+INSERT INTO users (name) VALUES ('Faizan Durrani');
+
+SELECT * FROM users;
