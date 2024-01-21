@@ -1,0 +1,56 @@
+CREATE TABLE admins 
+(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(50),
+    status VARCHAR(50)
+);
+INSERT INTO admins (name,status) VALUES ('Usman','Active');
+INSERT INTO admins (name,status) VALUES ('Ali','Active');
+INSERT INTO admins (name,status) VALUES ('Salar','Inactive');
+INSERT INTO admins (name,status) VALUES ('Shoaib','Inactive');
+
+CREATE TABLE users
+(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(50),
+    age TINYINT,
+    gender VARCHAR(50),
+    admin_id_FK INT
+);
+INSERT INTO users (name,age,gender,admin_id_FK INT) VALUES ('Bilal',26,'Male',1);
+INSERT INTO users (name,age,gender,admin_id_FK INT) VALUES ('Raheel',27,'Male',4);
+INSERT INTO users (name,age,gender,admin_id_FK INT) VALUES ('Maham',23,'Female',2);
+INSERT INTO users (name,age,gender,admin_id_FK INT) VALUES ('Fahad',24,'Male',3);
+INSERT INTO users (name,age,gender,admin_id_FK INT) VALUES ('Ahsan',25,'Male',4);
+INSERT INTO users (name,age,gender,admin_id_FK INT) VALUES ('Salman',22,'Male',2);
+INSERT INTO users (name,age,gender,admin_id_FK INT) VALUES ('Tanzeela',25,'Female',1);
+INSERT INTO users (name,age,gender,admin_id_FK INT) VALUES ('Sana',25,'Female',3);
+
+-- Query 1 Fetch All Records --
+SELECT admins.id, admins.name, admins.status AS admin_status,
+users.id AS user_id, users.name AS user_name,
+users.age AS user_age, users.gender AS user_gender,
+users.admin_id_FK
+FROM admins INNER JOIN users
+WHERE admins.id=users.admin_id_FK; 
+
+
+-- Query 2 Fetch Active Admins Records --
+SELECT admins.id, admins.name, admins.status AS admin_status,
+users.id AS user_id, users.name AS user_name,
+users.age AS user_age, users.gender AS user_gender,
+users.admin_id_FK
+FROM admins INNER JOIN users
+WHERE admins.id=users.admin_id_FK AND admins.status='Active';  
+
+
+-- Query 3 Fetch Active Admins Records --
+SELECT admins.id, admins.name, admins.status AS admin_status,
+users.id AS user_id, users.name AS user_name,
+users.age AS user_age, users.gender AS user_gender,
+users.admin_id_FK
+FROM admins INNER JOIN users
+ON admins.id=users.admin_id_FK
+WHERE admins.status='Active'; 
+
+-- Note: Query 2 And Query 3 will provide same result. You can use any of them. --
