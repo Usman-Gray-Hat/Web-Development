@@ -1,6 +1,0 @@
-================
-SNIPPET QUERY:01
-================
-
-SELECT * FROM table_name
-WHERE date_created >= DATE(NOW()) AND date_created < DATE(NOW() + INTERVAL 1 DAY);
