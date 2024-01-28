@@ -1,0 +1,38 @@
+================
+SNIPPET QUERY 1:
+================
+CREATE TABLE your_table_name
+(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    date_created TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+================
+SNIPPET QUERY 2:
+================
+CREATE TABLE your_table_name
+(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    date_created DATE DEFAULT CURRENT_TIMESTAMP
+);
+
+================
+SNIPPET QUERY 3:
+================
+ALTER TABLE your_table_name ADD column_name TIMESTAMP DEFAULT CURRENT_TIMESTAMP;
+
+================
+SNIPPET QUERY 4:
+================
+ALTER TABLE your_table_name ADD column_name DATE DEFAULT CURRENT_TIMESTAMP;
+
+
+Note: 
+If you want to add timestamp which will return the exact time along with (mins/secs),
+then it is highly recommended to use 'TIMESTAMP' data type with the default
+value of 'CURRENT_TIMESTAMP'. Otherwise you can simple use 'DATE' data type
+with the default value of 'CURRENT_TIMESTAMP'.

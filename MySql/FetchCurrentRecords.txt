@@ -1,0 +1,60 @@
+================
+IMPORTANT POINT:
+================
+
+* First ensure that your table column must have assigned the data type of 'DATE'
+
+* Suppose, we have a table, and in that table, we have date column named 'date_created'
+
+* Syntax for making a date column in your table.
+
+* date_created DATE DEFAULT CURRENT_DATE(); 
+
+=================================
+FOR FETCHING CURRENT DAY RECORDS:
+=================================
+i)  Query:01
+SELECT * FROM table_name 
+WHERE DATE(date_created) = DATE(CURRENT_DATE());
+OR
+ii) Query:02
+SELECT * FROM table_name 
+WHERE date_created = DATE(CURRENT_DATE());
+
+===================================
+FOR FETCHING CURRENT MONTH RECORDS:
+===================================
+SELECT * FROM table_name 
+WHERE MONTH(date_created) = MONTH(CURRENT_DATE());
+
+==================================
+FOR FETCHING CURRENT YEAR RECORDS:
+==================================
+SELECT * FROM table_name 
+WHERE YEAR(date_created) = YEAR(CURRENT_DATE());
+
+
+Note: If you are fetching current month records, it is recommended to use this query;
+
+SELECT * FROM table_name 
+WHERE MONTH(date_created) = MONTH(CURRENT_DATE()) AND YEAR(date_created) = YEAR(CURRENT_DATE());
+
+=> The above query will return the accurate result for current month records.
+
+
+=======================================
+FOR FETCHING RECORDS BETWEEN TWO DATES:
+=======================================
+SELECT * FROM table_name 
+WHERE date_created BETWEEN '2023-07-11' AND '2023-07-17';
+
+==================================
+IMPLEMENTATION THROUGH PHP SCRIPT:
+==================================   
+
+$from = $_POST['from'];
+$to = $_POST['to'];
+
+$query = "SELECT * FROM table_name 
+WHERE date_created BETWEEN '$from' AND '$to'";
+$result = mysqli_query($conn, $query);
